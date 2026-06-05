@@ -1,0 +1,34 @@
+{
+  "_comment": "Example MCP client configuration for the P21 API Documentation Server",
+  "_comment2": "Copy the relevant section to your client's config file",
+
+  "_streamable_http": {
+    "_description": "For Claude Code, Cursor, VS Code, and other clients supporting Streamable HTTP",
+    "mcpServers": {
+      "p21-api-docs": {
+        "type": "streamable-http",
+        "url": "http://localhost:8000/mcp"
+      }
+    }
+  },
+
+  "_claude_desktop_stdio_bridge": {
+    "_description": "For Claude Desktop using the mcp-remote stdio bridge",
+    "mcpServers": {
+      "p21-api-docs": {
+        "command": "npx",
+        "args": ["-y", "mcp-remote", "http://localhost:8000/mcp"]
+      }
+    }
+  },
+
+  "_stdio_direct": {
+    "_description": "Run the server directly via stdio (no HTTP)",
+    "mcpServers": {
+      "p21-api-docs": {
+        "command": "python",
+        "args": ["-m", "src.server", "--transport", "stdio"]
+      }
+    }
+  }
+}
