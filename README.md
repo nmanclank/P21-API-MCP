@@ -1,6 +1,6 @@
 # P21 API Documentation MCP Server
 
-An [MCP (Model Context Protocol)](https://modelcontextprotocol.io/) server that gives AI agents **expert knowledge** of the [Epicor Prophet 21 (P21)](https://www.epicor.com/en-us/erp-systems/prophet-21/) API system.
+A [MCP (Model Context Protocol)](https://modelcontextprotocol.io/) server that gives AI agents **expert knowledge** of the [Epicor Prophet 21 (P21)](https://www.epicor.com/en-us/erp-systems/prophet-21/) API system.
 
 Documentation is fetched live from [mrwuss/p21-api-documentation](https://github.com/mrwuss/p21-api-documentation) and served via **Streamable HTTP** transport — no local docs to maintain.
 
